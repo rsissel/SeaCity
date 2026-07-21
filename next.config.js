@@ -1,12 +1,10 @@
 const path = require('path');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: process.env.NEXT_DIST_DIR || '.next',
   output: process.env.NEXT_OUTPUT_MODE,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
-  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -22,5 +20,4 @@ const nextConfig = {
     return config;
   },
 };
-
 module.exports = nextConfig;
